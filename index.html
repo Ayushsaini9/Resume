@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Saini - Full Stack Developer</title>
+  <meta name="description" content="Ayush Saini is a B.Tech IT student at SKIT Jaipur who builds full-stack web applications with React, Node.js, and MongoDB.">
+  <meta name="author" content="Ayush Saini">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ayush Saini - Full Stack Developer">
+  <meta property="og:description" content="B.Tech IT student at SKIT Jaipur. Building web apps with React, Node.js, and MongoDB.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon: AS monogram -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23D4421E'/%3E%3Ctext x='16' y='22' font-family='system-ui' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Phosphor Icons (light weight for delicate look) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/light/style.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Paper grain texture -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor dot (desktop only) -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header" id="site-header">
+    <a href="#" class="logo" id="site-logo" aria-label="Back to top">PORTFOLIO</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- ====== HERO ====== -->
+  <main>
+    <section class="hero page-wrap" id="hero">
+
+      <h1 class="hero-name" id="hero-name">AYUSH   SAINI</h1>
+
+      <p class="hero-tagline">
+        I write code, break things, and occasionally fix them.<br>
+        B.Tech IT at SKIT Jaipur, currently in my 3rd year.
+      </p>
+
+      <div class="hero-links">
+        <a href="mailto:ayushsaini9352@gmail.com">
+          <i class="ph-light ph-envelope-simple"></i>
+          ayushsaini9352@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/ayush-saini-372203300" target="_blank" rel="noopener noreferrer">
+          <i class="ph-light ph-linkedin-logo"></i>
+          LinkedIn
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ====== ABOUT ====== -->
+    <section class="asym-section page-wrap" id="about">
+      <div class="section-label">About</div>
+      <div class="section-body about-text reveal-fade">
+        <p>
+          I got into programming because I wanted to understand how websites worked. Not a grand origin story - I was just curious why some sites loaded instantly and others felt broken. That curiosity turned into building full-stack apps with React and Node.js.
+        </p>
+        <p>
+          I'm not the kind of developer who lists every framework they've touched. I pick what I need, learn it properly, and build with it. Right now that's React on the front, Node and Express on the back, and MongoDB or MySQL depending on what the project needs.
+        </p>
+        <p class="opinion">
+          I think most developers (myself included) jump to frameworks too early without really understanding vanilla JavaScript. I'm still working on that.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ====== SKILLS (written, not badge grid) ====== -->
+    <section class="asym-section page-wrap" id="skills">
+      <div class="section-label">What I work with</div>
+      <div class="section-body">
+        <div class="skill-list stagger-children">
+          <div class="skill-item">
+            <span class="skill-name">React.js</span>
+            <span class="skill-note">My primary framework. Built two real projects with it. Still occasionally confused by when useEffect fires.</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Node + Express</span>
+            <span class="skill-note">Backend of choice. I like how fast I can get a REST API running and connected to a database.</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-note">The language I use the most. Comfortable with ES6+, async patterns, DOM manipulation. Learning more every week.</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Java</span>
+            <span class="skill-note">I use this for DSA practice and placement prep. Not my first choice for web projects.</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">MongoDB</span>
+            <span class="skill-note">Used in my bookstore project. I prefer it for rapid prototyping, but I know SQL has its place.</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">MySQL</span>
+            <span class="skill-note">Academic experience. I can write joins and design schemas, but I reach for Mongo first in personal projects.</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Python</span>
+            <span class="skill-note">My "get things done fast" language. Used for scripting and basic ML experiments.</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">C / C++</span>
+            <span class="skill-note">First languages I learned. Still use C++ for competitive programming practice.</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Git</span>
+            <span class="skill-note">I commit too often. Working on writing better commit messages.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====== PROJECTS ====== -->
+    <section class="work-section page-wrap" id="work">
+      <h2 class="work-title reveal-up">Selected work</h2>
+
+      <!-- Project 1: PYQ Analysis - full width image -->
+      <article class="project reveal-up">
+        <div class="project-image-wrap">
+          <img src="assets/pyq-project.png" alt="PYQ Analysis dashboard showing exam question analytics with charts and trend data" loading="lazy">
+        </div>
+        <div class="project-info">
+          <h3>PYQ Analysis Website</h3>
+          <p>
+            This started as a frustration. I was studying for exams and realized I was wasting time on topics that rarely appeared. So I built a tool that analyzes previous year questions to find patterns - repeated topics, frequency trends, and difficulty distribution.
+          </p>
+          <p class="honest-note">
+            Still a work in progress. The trend detection needs better algorithms, and the UI needs a redesign. But it solves my original problem, and a few classmates use it now.
+          </p>
+          <div class="project-tech-line">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Analytics</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Bookstore - split layout (different from project 1) -->
+      <article class="project project--split reveal-left">
+        <div class="project-image-wrap">
+          <img src="assets/bookstore-project.png" alt="Online bookstore showing a catalog of books with categories and cart" loading="lazy">
+        </div>
+        <div class="project-info">
+          <h3>Online Book Store</h3>
+          <p>
+            A full-stack e-commerce project. I followed a MERN stack tutorial for the initial setup, then extended it with search filters, a proper cart system, and user authentication.
+          </p>
+          <p class="honest-note">
+            The hardest part was getting the cart state to persist between page refreshes. I used localStorage as a workaround, which I know isn't ideal for production.
+          </p>
+          <div class="project-tech-line">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+
+    <!-- ====== EDUCATION ====== -->
+    <section class="asym-section page-wrap" id="education">
+      <div class="section-label">Education</div>
+      <div class="section-body">
+        <div class="edu-list stagger-children">
+          <div class="edu-item">
+            <div class="edu-main">
+              <h3>B.Tech in Information Technology</h3>
+              <p>Swami Keshvanand Institute of Technology, Jaipur</p>
+            </div>
+            <div class="edu-meta">2023 - 2027<br>CGPA: 7.4</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-main">
+              <h3>Senior Secondary (Class 12)</h3>
+              <p>Central Board of Secondary Education</p>
+            </div>
+            <div class="edu-meta">66.62%</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-main">
+              <h3>Secondary (Class 10)</h3>
+              <p>Central Board of Secondary Education</p>
+            </div>
+            <div class="edu-meta">81.62%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====== CURRENTLY / WIP ====== -->
+    <section class="currently-section page-wrap" id="currently">
+      <h2 class="currently-title reveal-up">What I'm up to right now</h2>
+      <div class="wip-badge"><span class="blink"></span> Updated June 2026</div>
+
+      <div class="currently-grid stagger-children">
+        <div class="currently-item">
+          <span class="currently-label">Learning</span>
+          <span class="currently-value">Java DSA for placement prep. Currently grinding through trees and graphs.</span>
+        </div>
+        <div class="currently-item">
+          <span class="currently-label">Building</span>
+          <span class="currently-value">A better version of my PYQ analyzer with AI-based topic classification.</span>
+        </div>
+        <div class="currently-item">
+          <span class="currently-label">Reading</span>
+          <span class="currently-value">Clean Code by Robert C. Martin. Chapter 4 is making me want to rewrite everything.</span>
+        </div>
+        <div class="currently-item">
+          <span class="currently-label">Struggling with</span>
+          <span class="currently-value">Writing CSS without Googling flexbox properties every 10 minutes.</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====== INTERESTS (personality) ====== -->
+    <section class="interests-section page-wrap">
+      <h3 class="interests-title reveal-fade">Things I find interesting</h3>
+      <p class="interests-text reveal-fade">
+        How databases decide query execution plans, street food in Jaipur, and why some code just "feels" right to read while other code makes you want to close the file.
+      </p>
+    </section>
+
+
+    <!-- ====== CONTACT ====== -->
+    <section class="contact-section page-wrap" id="contact">
+      <h2 class="contact-heading reveal-up">
+        <span class="hand-underline">
+          Say hi
+          <svg class="squiggle" viewBox="0 0 100 8" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 5 C 8 2, 15 2, 20 5 C 25 8, 32 8, 37 5 C 42 2, 48 2, 53 5 C 58 8, 65 8, 70 5 C 75 2, 82 2, 87 5 C 92 8, 96 6, 100 5"
+                  fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>.
+      </h2>
+
+      <div class="contact-items stagger-children">
+        <a href="mailto:ayushsaini9352@gmail.com" class="contact-item" id="contact-email">
+          <i class="ph-light ph-envelope-simple"></i>
+          ayushsaini9352@gmail.com
+        </a>
+        <a href="tel:+919610825144" class="contact-item" id="contact-phone">
+          <i class="ph-light ph-phone"></i>
+          +91 9610825144
+        </a>
+        <a href="https://www.linkedin.com/in/ayush-saini-372203300" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin">
+          <i class="ph-light ph-linkedin-logo"></i>
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer page-wrap">
+    <span>Built by <a href="#">Ayush Saini</a></span>
+    <span>Last updated <time datetime="2026-06">June 2026</time></span>
+  </footer>
+
+
+  <!-- ====== SCRIPTS ====== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ── Hero name: staggered character reveal ── */
+      const heroName = document.getElementById('hero-name');
+      if (heroName && !prefersReduced) {
+        const text = heroName.textContent;
+        heroName.innerHTML = '';
+        text.split('').forEach((char, i) => {
+          const span = document.createElement('span');
+          span.className = 'char';
+          span.textContent = char === ' ' ? '\u00A0' : char;
+          span.style.animationDelay = `${0.3 + i * 0.04}s`;
+          heroName.appendChild(span);
+        });
+      }
+
+      /* ── Custom cursor ── */
+      const cursorDot = document.getElementById('cursor-dot');
+      if (cursorDot && window.matchMedia('(hover: hover)').matches && !prefersReduced) {
+        let mouseX = 0, mouseY = 0;
+        let dotX = 0, dotY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+          cursorDot.classList.add('visible');
+        });
+
+        function animateDot() {
+          dotX += (mouseX - dotX) * 0.12;
+          dotY += (mouseY - dotY) * 0.12;
+          cursorDot.style.transform = `translate(${dotX - 4}px, ${dotY - 4}px)`;
+          requestAnimationFrame(animateDot);
+        }
+        animateDot();
+
+        document.addEventListener('mouseleave', () => {
+          cursorDot.classList.remove('visible');
+        });
+      }
+
+      /* ── Logo spin on click (surprise interaction) ── */
+      const logo = document.getElementById('site-logo');
+      if (logo) {
+        logo.addEventListener('click', (e) => {
+          e.preventDefault();
+          logo.classList.add('spin');
+          setTimeout(() => {
+            logo.classList.remove('spin');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }, 500);
+        });
+      }
+
+      /* ── Nav background on scroll ── */
+      const header = document.getElementById('site-header');
+      if (header) {
+        const onScroll = () => {
+          header.classList.toggle('scrolled', window.scrollY > 40);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
+
+      /* ── Scroll reveals (varied per element) ── */
+      if (!prefersReduced) {
+        const revealEls = document.querySelectorAll(
+          '.reveal-up, .reveal-left, .reveal-fade, .stagger-children'
+        );
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+
+        revealEls.forEach((el) => observer.observe(el));
+      } else {
+        document.querySelectorAll(
+          '.reveal-up, .reveal-left, .reveal-fade, .stagger-children'
+        ).forEach((el) => el.classList.add('visible'));
+      }
+
+      /* ── Smooth scroll for anchors ── */
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', (e) => {
+          const target = document.querySelector(anchor.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            const top = target.offsetTop - 64;
+            window.scrollTo({ top, behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
